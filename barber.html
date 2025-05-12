@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fama Barber Shop & Beauty Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          colors: {
+            gold: '#eab308',
+            dark: '#1f2937',
+            light: '#f3f4f6',
+            overlay: 'rgba(0,0,0,0.5)'
+          },
+          backgroundImage: {
+            hero: "url('https://images.unsplash.com/photo-1617137968429-1e7bb4c95325')"
+          }
+        }
+      }
+    }
+  </script>
+  <meta name="description" content="Fama Barber Shop & Beauty Salon offers premium grooming services in a luxurious setting. Book your appointment today.">
+  <meta name="keywords" content="barber shop, salon, grooming, haircut, beauty, fama salon">
+  <meta name="author" content="Fama Team">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2933/2933177.png" type="image/png">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-overlay bg-black bg-opacity-50">
+    <nav class="max-w-7xl mx-auto p-6 flex justify-between items-center text-white">
+      <a href="#" class="text-3xl font-heading text-gold">Fama Barber Shop</a>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+        <li><a href="#services" class="hover:text-yellow-500">Services</a></li>
+        <li><a href="#testimonials" class="hover:text-yellow-500">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+  <section id="home" class="relative min-h-screen bg-hero bg-cover bg-center flex items-center justify-center text-center text-white" style="margin-top: 80px;">
+    <div class="absolute inset-0 bg-overlay"></div>
+    <div class="absolute inset-0 flex items-start justify-center text-center z-10 pt-48">
+      <div class="max-w-2xl animate-fadeIn">
+        <h1 class="text-4xl font-heading mb-4">Welcome to Fama Barber Shop & Beauty Salon</h1>
+        <p class="text-xl mb-6">Where luxury meets grooming</p>
+        <a href="#contact" class="bg-gold text-white py-3 px-6 rounded-md hover:bg-yellow-500">Book an Appointment</a>
+        <div class="mt-6 animate-float">
+          <img src="https://images.unsplash.com/photo-1617137968429-1e7d30349e4f?auto=format&fit=crop&w=1600&q=80" alt="Barber Shop" class="w-full h-96 object-cover rounded-lg shadow-lg mt-4">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-heading text-gold mb-8 animate-fadeIn">About Us</h2>
+      <p class="text-lg mb-12">At Fama Barber Shop & Beauty Salon, we offer personalized grooming services for both men and women. Our talented team of professionals is dedicated to delivering an unforgettable experience in a warm, inviting atmosphere. We pride ourselves on offering the highest level of service, ensuring that every client leaves looking and feeling their best. Whether you’re here for a simple trim or a complete makeover, we’ve got you covered!</p>
+      <p class="text-lg mb-12">We understand that grooming is an essential part of self-care, and we aim to create a space where you can relax, unwind, and enjoy a rejuvenating experience. Our salon combines modern techniques with traditional barbershop values, so you can trust us with all of your grooming needs.</p>
+      <p class="text-lg">Join us today and let us help you look your best with our range of expert services.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-heading text-gold mb-8 animate-fadeIn">Our Services</h2>
+      <p class="text-lg mb-12">Explore our premium grooming services tailored to meet your needs.</p>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://cdn.pixabay.com/photo/2019/12/09/07/48/hairdresser-4682914_1280.jpg" alt="Haircut" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-heading text-dark mb-2">Haircut</h3>
+            <p class="text-sm mb-4">A personalized haircut that complements your style and personality.</p>
+            <span class="block text-lg font-bold text-gold">$25</span>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_1280.jpg" alt="Beard Trim" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-heading text-dark mb-2">Beard Trim</h3>
+            <p class="text-sm mb-4">Precision beard trimming to give you a sharp and clean look.</p>
+            <span class="block text-lg font-bold text-gold">$15</span>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://cdn.pixabay.com/photo/2019/09/16/17/43/spa-4481583_1280.jpg" alt="Facial" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-heading text-dark mb-2">Facial</h3>
+            <p class="text-sm mb-4">Revitalize your skin with our soothing facial treatments.</p>
+            <span class="block text-lg font-bold text-gold">$40</span>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://cdn.pixabay.com/photo/2017/08/06/00/44/people-2587179_1280.jpg" alt="Hair Coloring" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-heading text-dark mb-2">Hair Coloring</h3>
+            <p class="text-sm mb-4">Add color to your hair for a fresh, vibrant look.</p>
+            <span class="block text-lg font-bold text-gold">$50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-light py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-heading text-gold mb-8 animate-fadeIn">What Our Clients Say</h2>
+      <p class="text-lg mb-12">Hear from our happy clients about their grooming experience.</p>
+      <div class="flex space-x-8 overflow-x-scroll snap-x snap-mandatory">
+        <!-- Testimonial 1 -->
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg rounded-lg p-6 snap-start">
+          <p class="text-lg italic text-dark mb-4">"Best haircut I've had in years. The staff is professional, and the ambiance is top-notch!"</p>
+          <p class="font-bold text-dark">John Smith</p>
+          <p class="text-sm text-gray-500">Verified Customer</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg rounded-lg p-6 snap-start">
+          <p class="text-lg italic text-dark mb-4">"Costly compared to other barbershops with better haircuts."</p>
+          <p class="font-bold text-dark">Alice Williams</p>
+          <p class="text-sm text-gray-500">Verified Customer</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg rounded-lg p-6 snap-start">
+          <p class="text-lg italic text-dark mb-4">"I love the vibe here! The staff really takes care of you, and the haircut was perfect!"</p>
+          <p class="font-bold text-dark">Michael Johnson</p>
+          <p class="text-sm text-gray-500">Verified Customer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-heading text-gold mb-8 animate-fadeIn">Contact Us</h2>
+      <p class="text-lg mb-12">Get in touch with us to book an appointment or ask any questions.</p>
+      
+      <!-- Contact Form -->
+      <div class="max-w-2xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <form action="#" method="POST">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" name="name" placeholder="Your Name" class="border border-gray-300 p-3 rounded-md w-full" required>
+            <input type="email" name="email" placeholder="Your Email" class="border border-gray-300 p-3 rounded-md w-full" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject" class="border border-gray-300 p-3 rounded-md w-full mt-4" required>
+          <textarea name="message" placeholder="Your Message" rows="6" class="border border-gray-300 p-3 rounded-md w-full mt-4" required></textarea>
+          <button type="submit" class="bg-gold text-white py-3 px-6 rounded-md mt-6 hover:bg-yellow-500">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="flex justify-center space-x-8 mb-6">
+        <a href="#" class="text-gold hover:text-yellow-500">Instagram</a>
+        <a href="#" class="text-gold hover:text-yellow-500">Facebook</a>
+        <a href="#" class="text-gold hover:text-yellow-500">Twitter</a>
+      </div>
+      <p>&copy; 2025 Fama Barber Shop & Beauty Salon. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:devfrend.com@gmail.com" class="text-gold">devfrend.com@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll to Top functionality
+    const scrollToTopBtn = document.createElement("button");
+    scrollToTopBtn.innerHTML = "↑";
+    scrollToTopBtn.classList.add("fixed", "bottom-4", "right-4", "bg-gold", "text-white", "p-4", "rounded-full", "shadow-lg", "hidden", "lg:block");
+    scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    document.body.appendChild(scrollToTopBtn);
+
+    // Show scroll to top button when scrolled down
+    window.onscroll = () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.classList.remove("hidden");
+      } else {
+        scrollToTopBtn.classList.add("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>
